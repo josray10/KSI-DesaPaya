@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #DCE1DE;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #DCE1DE;
+}
+
+/* header */
+.header {
+    display: flex;
+    background-color: #216869;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.headerfoto {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.headerfoto img {
+    width: 60px;
+}
+
+.title {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.title h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.title h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 87px;
+    width: 80%;
+}
+
+.navbar li a {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar li a:hover {
+    color: #7DBA9E;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+/* tentang */
+.main{
+    width: 80%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 110px;
+}
+
+.main img {
+    width: 335px;
+    height: 251.1px;
+    left: 110px;
+    top: 196px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.maintext {
+    margin-left: 53px;
+}
+
+.maintext p {
+    font-weight: 400;
+    font-size: 20pt;
+    line-height: 30px;
+}
+
+.maintext h2 {
+    font-weight: 800;
+    font-size: 32pt;
+    margin-bottom: 22px;
+}
+
+/* fieldset */
+.artikel {
+    margin-top: 40px;
+}
+
+.boxartikel {
+    box-sizing: border-box;
+    margin: auto;
+    width: 1700px;
+    height: 700px;
+    left: 70px;
+    top: 538px;
+    overflow-y: scroll;
+
+    border: 1px solid #216869;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.isiartikel {
+    margin: 10px 20px 10px;
+}
+
+.isiartikel h4 {
+    font-size: 20px;
+}
+
+.isiartikel p {
+    font-size: 16px;
+}
+
+/* Mapping */
+.mapping {
+    padding-top: 54px;
+}
+
+.mapping h2 {
+    font-weight: 800;
+    text-align: center;
+}
+
+.mapping iframe {
+    margin-top: 22px;
+    margin-left: 118px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*nama dusun*/
+.picfigure h2 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.fig {
+    display: flex;
+    justify-content: center;
+}
+
+.fig figure {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.fig img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #216869;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fig figcaption {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    background: rgb(156,197,161);
+    background: linear-gradient(0deg, rgba(156,197,161,1) 0%, rgba(220,225,222,1) 100%);
+    animation: gradient 15s ease infinite;
+}
+
+.footer hr {
+    border: 1px solid #9cc5a191;
+    width: 80%;
+    margin: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title-footer {
+    margin-top: 60px;
+    text-align: center;
+}
+    
+.titledesa p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.navbar-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87px;
+}
+
+.navbar-footer li a {
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.navbar-footer li a:hover {
+    color: #7DBA9E;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+.copyright p {
+    text-align: center;
+    margin: auto;
+}
+
+.login {
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login a {
+    color: black;
+}
+
+.login a:hover {
+    color: #7DBA9E;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+/* Lembaga Desa */
+.titlecenter h2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px ;
+}
+
+.maincentertext {
+    margin-top: 40px;
+}
+
+.maincentertext p {
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.lembaga {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.isilembaga {
+    margin: 20px auto 20px;
+    box-sizing: border-box;
+    width: 1000px;
+    left: 49px;
+    top: 178px;
+    border: 2px solid #00000041;
+    border-radius: 46px;
+}
+
+.sectionlembaga {
+    margin: 20px 20px 20px;
+}
+
+.single {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.multi {
+    display: flex;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.multi img {
+    margin: 10px auto 10px auto;
+}
+
+.sectionlembaga h2 { 
+    font-size: 32px;
+}
+
+.sectionlembaga p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.sectionlembaga hr {
+    border: 2px solid #216869;
+}
+
+.sectionlembaga iframe {
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+
+.sectiontitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.navlembaga li {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 63px;
+
+    background: #216869;
+    border-radius: 10px;
+}
+
+.navlembaga li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.navlembaga li:hover {
+    background: #49A078;
+    border: 1px solid #216869;
+    transition: 0.5s ease;
+    text-decoration: underline;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.secnavlembaga {
+    margin: 10px auto 10px;
+    width: 350px;
+}
+
+.secimage {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.horz {
+    width: 350px;
+    height: 529px;
+    left: 1060px;
+    top: 533px;
+    border-radius: 5px;
+}
+
+.norm {
+    width: 350px;
+    height: 300px;
+    left: 1058px;
+    top: 1086px;
+    border-radius: 5px;
+}
+
+/* lainnya */
+.contact h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 24px;
+}
+
+/* Struktur Desa */
+.containervisi {
+    display: flex;
+    justify-content: center;
+}
+
+.boxvisi{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 480px;
+    height: 480px;
+    background: #216869;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.boxvisi p {
+    font-size: 16px;
+    margin: 20px;
+    color: white;
+}
+

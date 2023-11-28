@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #DCE1DE;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #DCE1DE;
+}
+
+/* header */
+.header {
+    display: flex;
+    background-color: #216869;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.headerfoto {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.headerfoto img {
+    width: 60px;
+}
+
+.title {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.title h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.title h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 87px;
+    width: 20%;
+}
+
+.navbar li a {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar li a:hover {
+    color: #7DBA9E;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+/* login */
+.maincenter h2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.createbox {
+    width: 1300px;
+    height: 550px;
+    left: 70px;
+    top: 272px;
+
+    background: #9CC5A1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.formlogin {
+    margin: auto;
+    width: 500px;
+    /* height: 450px; */
+    left: 470px;
+    top: 273px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #9CC5A1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: #21686900;
+    margin-bottom: 40px;
+}
+
+.formlogin form {
+    /* margin-top: 40px; */
+    /* justify-content: center; */
+    margin: 0 25px 0;
+}
+
+.formlogin form label.label {
+    display: block;
+    margin-top: 5%;
+}
+
+.inputtext {
+    box-sizing: border-box;
+    /* margin-left: 40px; */
+    width: 450px;
+    height: 50px;
+    /* left: 495px; */
+    /* top: 361px; */
+    padding-left: 2%;
+
+    background: #D9D9D9;
+    border: 1px solid #7DBA9E;
+    border-radius: 10px;
+}
+
+.tombol {
+    display: block;
+    /* margin-top: 100px; */
+    box-sizing: border-box;
+    width: 350px;
+    height: 50px;
+    margin: 100px auto 50px;
+    justify-content: center;
+    background: #D9D9D9;
+    border: 1px solid #216869;
+    border-radius: 10px;
+}
+
+.tableartikel {
+    background-color: aqua;
+}
+
+table {
+    margin-top: 40px;
+    border: 1px solid #216869;
+}
+
+.artikel {
+    margin-top: 40px;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    background: rgb(156,197,161);
+    background: linear-gradient(0deg, rgba(156,197,161,1) 0%, rgba(220,225,222,1) 100%);
+    animation: gradient 15s ease infinite;
+}
+
+.footer hr {
+    border: 1px solid #9cc5a191;
+    width: 80%;
+    margin: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title-footer {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+    
+.titledesa p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.copyright p {
+    text-align: center;
+    margin: auto;
+}
+
+.login {
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login a {
+    color: black;
+}
+
+.login a:hover {
+    color: #7DBA9E;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+.maincentertext {
+    margin-top: 40px;
+}
+
+.maincentertext p {
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+/* Lihat Artikel */
+.show h2 {
+    padding: 25px;
+}
+
+.image {
+    display: block;
+    justify-content: center;
+    display: block;
+    width: min-content;
+    margin: auto;
+}
+
+.image img{
+    width: 750px;
+    height: 380px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail p {
+    margin: 10px 10px 10px 10px;
+}
+
+.detail img {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    display: block;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
