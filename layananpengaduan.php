@@ -1,5 +1,16 @@
 <?php
 include "logout.php";
+include "cekAdmin.php";
+
+include 'config.php';
+
+if (isset($_SESSION['pesan_sukses'])) {
+    echo '<p style="color: green;">' . $_SESSION['pesan_sukses'] . '</p>';
+    unset($_SESSION['pesan_sukses']);
+} elseif (isset($_SESSION['pesan_gagal'])) {
+    echo '<p style="color: red;">' . $_SESSION['pesan_gagal'] . '</p>';
+    unset($_SESSION['pesan_gagal']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,23 +47,23 @@ include "logout.php";
         <div class="maincenter">
             <div class="formlayananpengaduan">
                 <h1>Layanan Pengaduan Warga</h1>
-                <form action="#">
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required>
+                <form action="kirimpengaduan.php" method="POST">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="phone">No. HP:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="nohp">No. HP:</label>
+                    <input type="tel" id="nohp" name="nohp" required>
 
-                    <label for="address">Alamat:</label>
-                    <textarea id="address" name="address" required></textarea>
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="address" name="alamat" required></textarea>
 
-                    <label for="message">Isi Pesan:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="pesan">Isi Pesan:</label>
+                    <textarea id="message" name="pesan" required></textarea>
 
-                    <button type="submit">Kirim</button>
+                    <button type="submit" value="kirim" name="kirim">Kirim</button>
                 </form>
             </div>
         </div>

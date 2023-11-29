@@ -9,6 +9,7 @@
     <link rel="icon" href="image/icon/icolamsel.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <?php
+    include "cekAdmin.php";
     include "logout.php";
     ?>
 </head>
@@ -63,14 +64,13 @@
             <hr>
             <div class="title-footer">
                 <div class="titledesa">
-                    <p>Desa Campang Tiga</p>
+                    <p>Desa Paya, Padang Cermin</p>
                 </div>
-                <p>Kabupaten Lampung Selatan</p>
+                <p>Kabupaten Pesawaran</p>
             </div>
             <div class="copyright">
-                <p>© Copyright 2022 All Rights Reserve | Dibuat Oleh <a
-                        href="https://instagram.com/kkncampangtiga119?igshid=Yzg5MTU1MDY=" target="_blank">KKN ITERA
-                        119</a></p>
+                <p>© Copyright 2023 All Rights Reserve | Dibuat Oleh <a href="" target="_blank">kelompok KSI RC DoaIbu
+                        Teknik Informatika ITERA</a></p>
             </div>
         </footer>
     </div>

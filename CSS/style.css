@@ -859,3 +859,75 @@ textarea.inputtext {
   resize: vertical;
   min-height: 200px;
 }
+
+.isi-data-pengaduan table {
+  border-collapse: collapse; /* Menggabungkan batas sel menjadi satu */
+  width: 100%;
+}
+
+/* Gaya untuk sel di dalam tabel */
+.isi-data-pengaduan td,
+.isi-data-pengaduan th {
+  border: 1px solid #b8b6b6; /* Border tipis berwarna abu-abu */
+  padding: 8px; /* Ruang di dalam sel */
+  text-align: left; /* Posisi teks di dalam sel */
+}
+
+/* Gaya untuk sudut-sudut sel */
+.isi-data-pengaduan td:first-child,
+.isi-data-pengaduan th:first-child {
+  border-top-left-radius: 10px; /* Radius sudut kiri atas */
+  border-bottom-left-radius: 10px; /* Radius sudut kiri bawah */
+}
+
+.isi-data-pengaduan td:last-child,
+.isi-data-pengaduan th:last-child {
+  border-top-right-radius: 10px; /* Radius sudut kanan atas */
+  border-bottom-right-radius: 10px; /* Radius sudut kanan bawah */
+}
+
+.isi-detail-pengaduan {
+  max-width: 400px;
+  margin: 50 auto;
+  padding: 20px;
+  background-color: #9cc5a1;
+  border-radius: 5px;
+}
+
+.detail-pengaduan h1,
+.data-pengaduan h1 {
+  text-align: center;
+  margin: 50 auto;
+}
+
+dl {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+dd {
+  margin-bottom: 15px;
+}
+
+.detail-link {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3498db; /* Warna teks biru */
+  cursor: pointer;
+  background-color: #c5c5c5;
+}
+
+.detail-link:hover {
+  text-decoration: underline; /* Tampilkan garis bawah saat dihover */
+  color: #2569a7; /* Warna teks biru lebih gelap saat dihover */
+}

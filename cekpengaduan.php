@@ -1,3 +1,12 @@
+<?php
+include("cekAdmin.php");
+
+$query_pengaduan = "SELECT * FROM pengaduan";
+$result_pengaduan = $koneksi->query($query_pengaduan);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,10 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" href="image/icon/icolamsel.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
-    <?php
-    include "cekAdmin.php";
-    ?>
+    <link rel="stylesheet" href="CSS/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -32,46 +38,40 @@
                 <li>
             </div>
         </div>
-        <div class="daftarArtikel">
-            <h2>Artikel Desa</h2>
-            <?php
-            $sql = "SELECT * FROM artikel";
+        <div class="data-pengaduan">
+            <h1>Data Pengaduan</h1>
+            <div class="isi-data-pengaduan">
+                <!-- Tampilkan data pengaduan dalam tabel -->
+                <table border=" 1">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Tanggal Pengaduan</th>
+                        <th>Detail</th>
+                    </tr>
 
-            $data = $koneksi->query($sql);
-            if ($data->num_rows > 0) {
-                ?>
-                <center>
-                    <table class="tabelartikel">
-                        <tr>
-                            <th>Judul Artikel</th>
-                            <th>Isi Artikel</th>
-                            <th>Aksi</th>
-                        </tr>
-                        <?php
-                        while ($temp = $data->fetch_assoc()) {
-                            ?>
-                            <tr>
-                                <td>
-                                    <?= $temp['judul'] ?>
-                                </td>
-                                <td>
-                                    <?= strlen($temp['isi']) > 50 ? substr($temp['isi'], 0, 50) . "..." : $temp['isi'] ?>
-                                </td>
-                                <td>
-                                    <a href="edit.php?edit=<?= $temp['id'] ?>">Edit</a>
-                                    <a href="dashboard.php?hapus=<?= $temp['id'] ?>">Hapus</a>
-                                </td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </table>
                     <?php
-            } else {
-                echo "<h3>Tidak Ada Artikel</h3>";
-            }
-            ?>
-            </center>
+                    if ($result_pengaduan->num_rows > 0) {
+                        $no = 1;
+                        while ($row = $result_pengaduan->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $no . "</td>";
+                            echo "<td>" . $row['nama'] . "</td>";
+                            echo "<td>" . $row['waktu_pengaduan'] . "</td>";
+
+                            echo "<td><a href='detailpengaduan.php?id=" . $row['id'] . "' class='detail-link' >Detail<a></td>";
+                            echo "</tr>";
+                            $no++;
+                        }
+                    } else {
+                        echo "<tr><td colspan='6'>Tidak ada data pengaduan</td></tr>";
+                    }
+                    ?>
+                </table>
+
+            </div>
+
+
         </div>
         <footer class="footer">
             <hr>

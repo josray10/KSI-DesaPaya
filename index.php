@@ -1,5 +1,6 @@
 <?php
 include "logout.php";
+include "cekAdmin.php";
 
 $sql = "SELECT * FROM artikel";
 
@@ -141,8 +142,7 @@ $sql = "SELECT * FROM artikel";
                 <a href="login.php">Your an Administrator?</a>
             </div>
             <div class="copyright">
-                <p>© Copyright 2023 All Rights Reserve | Dibuat Oleh <a
-                        href="" target="_blank">kelompok KSI RC DoaIbu
+                <p>© Copyright 2023 All Rights Reserve | Dibuat Oleh <a href="" target="_blank">kelompok KSI RC DoaIbu
                         Teknik Informatika ITERA</a></p>
             </div>
         </footer>
